@@ -93,3 +93,20 @@ WHERE
     commission_pct IS NULL;
     
     
+# <=> can be used for null and values
+ SELECT 
+    last_name, commission_pct
+FROM
+    employees
+WHERE
+    commission_pct <=> NULL;
+# -------------------------------------
+ SELECT 
+    last_name, commission_pct
+FROM
+    employees
+WHERE
+    salary <=> 12000;
+
+
+    
